@@ -1,0 +1,17 @@
+﻿@model ToDOList.Models.ToDo
+
+@{
+    ViewData["Title"] = "Done";
+}
+
+<h1>IsDone</h1>
+
+<div>
+    <h4>ToDo</h4>
+    <hr />
+    
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

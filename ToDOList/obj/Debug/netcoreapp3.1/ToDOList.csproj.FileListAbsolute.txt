@@ -152,3 +152,5 @@ C:\Users\ДОМ\source\repos\ToDOList\ToDOList\bin\Debug\netcoreapp3.1\zh-Hant\M
 C:\Users\ДОМ\source\repos\ToDOList\ToDOList\obj\Debug\netcoreapp3.1\Razor\Views\ToDo\Index.cshtml.g.cs
 C:\Users\ДОМ\source\repos\ToDOList\ToDOList\obj\Debug\netcoreapp3.1\Razor\Views\ToDo\Create.cshtml.g.cs
 C:\Users\ДОМ\source\repos\ToDOList\ToDOList\obj\Debug\netcoreapp3.1\Razor\Views\ToDo\Edit.cshtml.g.cs
+C:\Users\ДОМ\source\repos\ToDOList\ToDOList\obj\Debug\netcoreapp3.1\Razor\Views\ToDo\IsDone.cshtml.g.cs
+C:\Users\ДОМ\source\repos\ToDOList\ToDOList\obj\Debug\netcoreapp3.1\Razor\Views\ToDo\ToDoTable.cshtml.g.cs

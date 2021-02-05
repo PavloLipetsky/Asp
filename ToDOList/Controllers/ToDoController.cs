@@ -12,6 +12,8 @@ namespace ToDOList.Controllers
     public class ToDoController : Controller
     {
         private readonly ToDoContext context;
+    
+
         public ToDoController(ToDoContext context)
         {
             this.context = context;
@@ -77,14 +79,32 @@ namespace ToDOList.Controllers
             }
             return RedirectToAction("Index");
         }
-        public async Task<ActionResult> Check(int id)
+        public async Task<ActionResult> IsDone(int id)
         {
             ToDo item = await context.ToDoList.FindAsync(id);
             if (item == null)
             {
                 return NotFound();
             }
-            return View(item);
-        }
+            else 
+            {
+                if (item.IsDone == true)
+                {
+                    item.IsDone = false;
+                  
+                    await context.SaveChangesAsync();
+                    context.Update(item);
+                }
+                else
+                {
+                    item.IsDone = true;
+
+                    await context.SaveChangesAsync();
+                    context.Update(item);
+                }
+            }
+            return RedirectToAction("Index");
+        }     
     }
+  
 }

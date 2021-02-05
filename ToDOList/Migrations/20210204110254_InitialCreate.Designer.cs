@@ -9,7 +9,7 @@ using ToDOList.Infastructure;
 namespace ToDOList.Migrations
 {
     [DbContext(typeof(ToDoContext))]
-    [Migration("20210203101221_InitialCreate")]
+    [Migration("20210204110254_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -30,6 +30,9 @@ namespace ToDOList.Migrations
                     b.Property<string>("Content")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDone")
+                        .HasColumnType("bit");
 
                     b.HasKey("Id");
 

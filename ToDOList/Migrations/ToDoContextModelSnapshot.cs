@@ -29,6 +29,9 @@ namespace ToDOList.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("IsDone")
+                        .HasColumnType("bit");
+
                     b.HasKey("Id");
 
                     b.ToTable("ToDoList");

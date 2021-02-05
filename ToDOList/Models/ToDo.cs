@@ -13,6 +13,7 @@ namespace ToDOList.Models
         [Required]
         public string Content { get; set; }
         public bool IsDone { get; set; }
+        
     
 
     }
